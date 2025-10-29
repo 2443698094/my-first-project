@@ -1,0 +1,20 @@
+
+# 1. 创建功能分支
+git checkout -b feat/search
+
+# 2. 开发-提交循环（重复多次）
+vim src/components/SearchBar.jsx   # 开发搜索UI
+git add -p src/components/SearchBar.jsx  # 选择性暂存
+git commit -m "feat(ui): 添加搜索框基础样式"
+
+vim src/api/search.js              # 开发API调用
+git add src/api/search.js
+git commit -m "feat(api): 实现关键词搜索接口"
+
+# 3. 本地整理提交（可选）
+git rebase -i HEAD~2  # 合并或修改描述
+
+# 4. 推送到远程
+git push origin feat/search
+
+# 5. 在GitHub创建PR，选择 "Rebase and Merge
