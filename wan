@@ -1,0 +1,15 @@
+# 克隆仓库（首次操作）
+git clone https://github.com/user/repo.git
+
+# 进入仓库目录
+cd repo
+
+# 创建新分支
+git checkout -b fix-bug
+
+# 修改文件后提交
+git add .
+git commit -m "fix: 解决按钮点击无效的问题"
+
+# 推送到远程分支
+git push origin fix-bu
