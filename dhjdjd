@@ -1,0 +1,7 @@
+
+git commit -m "fix(auth): 修复JWT过期时间计算错误
+
+原算法未考虑时区转换，导致令牌提前失效。
+使用dayjs替代moment处理时间计算。
+
+Closes #123
